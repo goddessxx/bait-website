@@ -26,7 +26,7 @@ nav {
 #dropdown-box {
   list-style: none;
   display: none;
-  background-color: #56776c;
+  background-color: #9ba17b;
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 0.7em;
@@ -69,7 +69,7 @@ li {
 #index-main p {
   font-size: 1.7em;
   text-align: center;
-  color: #519259;
+  color: #cdf8b9;
 }
 #index-main {
   position: relative;
