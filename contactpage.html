@@ -7,23 +7,31 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css" />
     <script
-      src="https://kit.fontawesome.com/a2bdcc150a.js"
+      src="https://kit.fontawesome.com/8d81142740.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body id="contact-body">
     <nav>
-      <ul>
-        <li><a href="index.html">Howard's Lake Side General Store</a></li>
+      <i class="fa-solid fa-bars" id="hamburger"></i>
+      <div>
+        <img
+          src="images/Howard's Lake Side General Store-1.png"
+          alt="Business Logo"
+          id="logo"
+        />
+      </div>
+      <ul id="dropdown-box">
+        <li><a href="index.html">Home Page</a></li>
         <li><a href="baitpage.html">Bait Shop</a></li>
         <li><a href="contactpage.html">Contact Us</a></li>
         <li><a href="respoolingservice.html">Respooling Service</a></li>
       </ul>
     </nav>
     <header>
-      <h1>Contact Information</h1>
+      <h1 id="contact-header">Contact Information</h1>
     </header>
-    <main>
+    <main id="contact-main">
       <h3>Location: 1919 Croft Rd Springfield, Ohio 45503</h3>
       <h3>Email: howardslakeside@gmail.com</h3>
       <h3>Phone Number: (937) 505-1037</h3>
@@ -31,11 +39,15 @@
         <img
           src="images/contactimg.jpg"
           alt="Picture of man holding a fish in front of a store."
+          id="contact-img"
         />
       </figure>
     </main>
     <footer>
-      <p>Copyrighted Howard's Lake Side General Store &copy; 2022</p>
+      <p id="contact-footer">
+        Copyrighted Howard's Lake Side General Store &copy; 2022
+      </p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

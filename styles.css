@@ -3,21 +3,280 @@
 /* Styles For All Pages */
 body {
   font-family: "Roboto", sans-serif;
+  color: #9ba17b;
+  background-image: url(images/sora-sagano-Dksk8szLRN0-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 /* Nav */
-.dropdown-box {
+nav {
+  display: flex;
+}
+#logo {
+  width: 20em;
+  height: 220px;
+  width: 220px;
+  position: relative;
+  bottom: 5em;
+}
+#dropdown-box {
   list-style: none;
   display: none;
+  background-color: #56776c;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.7em;
+  height: 8em;
+  border-radius: 3%;
+  font-size: 1.1em;
+  z-index: 9;
 }
 a {
   text-decoration: none;
+  color: #2c3639;
+}
+a:hover {
+  color: #66a96b;
+}
+#hamburger {
+  font-size: 1.5em;
+}
+nav div {
+  margin: auto;
+}
+li {
+  padding-bottom: 0.6em;
 }
 /* Index Page */
-
+#index-header {
+  text-align: center;
+  position: relative;
+  bottom: 7em;
+}
+#index-header h1 {
+  font-size: 2.5em;
+  margin-top: 2.4em;
+}
+#main-header {
+  margin-top: 3.5em;
+  font-size: 2.5em;
+  text-align: center;
+}
+#index-main p {
+  font-size: 1.7em;
+  text-align: center;
+  color: #519259;
+}
+#index-main {
+  position: relative;
+  bottom: 5.5em;
+}
+button {
+  border-radius: 4%;
+  border-style: none;
+  height: 3em;
+  width: 6.5em;
+  font-family: "Roboto", sans-serif;
+  color: #82a284;
+  background-color: #576f72;
+  font-size: 1.2em;
+  margin-top: 3.3em;
+}
+button:hover {
+  background-color: #a1c298;
+  color: #2c3639;
+}
+#bait-button {
+  margin-right: 2em;
+}
+#index-footer {
+  margin-top: 5.3em;
+  font-size: 1em;
+  color: #7fb77e;
+  text-align: center;
+}
 /* Bait Page */
-
+#bait-header {
+  text-align: center;
+  position: relative;
+  bottom: 7em;
+}
+#bait-header > h1 {
+  font-size: 2.5em;
+}
+#bait-header > h3 {
+  color: #7fb77e;
+}
+div > h2 {
+  font-size: 1.8em;
+}
+.live-bait, .live-fish, .cold-bait {
+  position: relative;
+  bottom: 5em;
+}
+#bait-footer {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 1em;
+  color: #7fb77e;
+}
+ul {
+  list-style: none;
+  font-size: 1.2em;
+  color: #749f82;
+}
 /* Contact Page */
-
+#contact-body {
+  text-align: center;
+}
+#contact-header {
+  font-size: 2.5em;
+  position: relative;
+  bottom: 3em;
+}
+#contact-main {
+  position: relative;
+  bottom: 4em;
+}
+#contact-img {
+  border-radius: 3%;
+  margin-top: 2em;
+  box-shadow: 1em 1em 4.5em #191a19;
+}
+#contact-footer {
+  margin-top: 8em;
+  font-size: 1em;
+  color: #7fb77e;
+}
 /* Respooling Service Page */
-
+#respooling-header {
+  text-align: center;
+  margin-top: -1em;
+  font-size: 2.4em;
+}
+#respooling-p {
+  text-align: center;
+  margin-top: 3em;
+  font-size: 1.5em;
+}
+#respooling-footer {
+  text-align: center;
+  margin-top: 14.8em;
+  font-size: 1em;
+  color: #7fb77e;
+}
+/* Animations */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* Responsive Settings */
+/* 1100 px */
+@media (min-width: 68.75em) {
+  /* Nav */
+  #dropdown-box {
+    display: inline;
+    background-color: transparent;
+  }
+  #hamburger {
+    display: none;
+  }
+  nav div {
+    justify-content: flex-start;
+    margin: 0;
+  }
+  #dropdown-box li a {
+    color: #99a799;
+  }
+  #dropdown-box li {
+    display: inline;
+    padding-right: 2em;
+  }
+  #logo {
+    bottom: 4.5em;
+  }
+  /* Index Page */
+  #index-main p {
+    margin: 0 8em 0 8em;
+    font-size: 1.8em;
+    color: #519259;
+  }
+  #index-main {
+    bottom: 13em;
+  }
+  #index-header {
+    bottom: 11em;
+  }
+  #index-footer {
+    color: #191a19;
+    margin-top: 5;
+  }
+  /* Bait Shop Page */
+  .live-bait h2,
+  .live-fish h2,
+  .cold-bait h2 {
+    padding-left: 2em;
+    font-size: 2.5em;
+  }
+
+  .live-bait li,
+  .live-fish li,
+  .cold-bait li {
+    font-size: 1.4em;
+  }
+  #bait-header h1 {
+    font-size: 3em;
+  }
+  #bait-header {
+    position: relative;
+    bottom: 5em;
+  }
+  #bait-footer {
+    color: #576f72;
+  }
+  /* Contact Page */
+  #contact-header {
+    font-size: 3em;
+    position: relative;
+    bottom: 2em;
+  }
+  #contact-main {
+    position: relative;
+    bottom: 4em;
+    font-size: 1.3em;
+  }
+  #contact-main figure img {
+    width: 28.125em;
+  }
+  #contact-footer {
+    margin-top: 4em;
+    font-size: 1em;
+    color: #191a19;
+  }
+  /* Respooling Service Page */
+  #respooling-header {
+    text-align: center;
+    position: relative;
+    bottom: 1em;
+    font-size: 2.7em;
+  }
+  #respooling-p {
+    text-align: center;
+    position: relative;
+    bottom: -1em;
+    font-size: 1.8em;
+    margin: 0 7em 0 7em;
+  }
+  #respooling-footer {
+    margin-top: 18em;
+    color: #191a19;
+  }
+}

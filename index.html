@@ -11,18 +11,24 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body id="index-body">
     <nav>
-      <i class="fa-solid fa-bars"></i>
-      <ul class="dropdown-box">
-        <li><a href="index.html">Howard's Lake Side General Store</a></li>
+      <i class="fa-solid fa-bars" id="hamburger"></i>
+      <div>
+        <img
+          src="images/Howard's Lake Side General Store-1.png"
+          alt="Business Logo"
+          id="logo"
+        />
+      </div>
+      <ul id="dropdown-box">
         <li><a href="baitpage.html">Bait Shop</a></li>
         <li><a href="contactpage.html">Contact Us</a></li>
         <li><a href="respoolingservice.html">Respooling Service</a></li>
       </ul>
     </nav>
-    <header>
-      <h1 id="index-header">Where You Can Get The Best Bait In Town</h1>
+    <header id="index-header">
+      <h1>Where You Can Get The Best Bait In Town</h1>
       <button onclick="location.href = 'baitpage.html'" id="bait-button">
         Bait Shop
       </button>
@@ -30,8 +36,8 @@
         Contact Us
       </button>
     </header>
-    <main>
-      <h1>Additional Services</h1>
+    <main id="index-main">
+      <h1 id="main-header">Additional Services</h1>
       <p>
         Not only do we have LIVE bait, but we also offer snacks, hunting
         licences/equipment, you can also camp and fish here! While you are here
@@ -40,7 +46,10 @@
       </p>
     </main>
     <footer>
-      <p>Copyrighted Howard's Lake Side General Store &copy; 2022</p>
+      <p id="index-footer">
+        Copyrighted Howard's Lake Side General Store &copy; 2022
+      </p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
