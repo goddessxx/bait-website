@@ -40,7 +40,7 @@ a {
   color: #2c3639;
 }
 a:hover {
-  color: #66a96b;
+  color: #a6cf98;
 }
 #hamburger {
   font-size: 1.5em;
@@ -55,7 +55,7 @@ li {
 #index-header {
   text-align: center;
   position: relative;
-  bottom: 7em;
+  bottom: 7.5em;
 }
 #index-header h1 {
   font-size: 2.5em;
@@ -69,11 +69,11 @@ li {
 #index-main p {
   font-size: 1.7em;
   text-align: center;
-  color: #cdf8b9;
+  color: #bdd2b6;
 }
 #index-main {
   position: relative;
-  bottom: 5.5em;
+  bottom: 6.5em;
 }
 button {
   border-radius: 4%;
@@ -94,7 +94,7 @@ button:hover {
   margin-right: 2em;
 }
 #index-footer {
-  margin-top: 5.3em;
+  margin-top: 5.5em;
   font-size: 1em;
   color: #7fb77e;
   text-align: center;
@@ -209,17 +209,16 @@ ul {
   #index-main p {
     margin: 0 8em 0 8em;
     font-size: 1.8em;
-    color: #519259;
   }
   #index-main {
-    bottom: 13em;
+    bottom: 15em;
   }
   #index-header {
     bottom: 11em;
   }
   #index-footer {
     color: #191a19;
-    margin-top: 5;
+    margin-top: 0.4em;
   }
   /* Bait Shop Page */
   .live-bait h2,
@@ -242,7 +241,7 @@ ul {
     bottom: 5em;
   }
   #bait-footer {
-    color: #576f72;
+    color: #191a19;
   }
   /* Contact Page */
   #contact-header {
@@ -278,7 +277,7 @@ ul {
     margin: 0 7em 0 7em;
   }
   #respooling-footer {
-    margin-top: 18em;
+    margin-top: 21em;
     color: #191a19;
   }
 }
